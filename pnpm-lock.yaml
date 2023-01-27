@@ -10,6 +10,7 @@ specifiers:
   '@tailwindcss/typography': ^0.5.7
   '@types/alpinejs': ^3.0.0
   alpinejs: ^3.0.0
+  animated-tailwindcss: ^4.0.0
   astro: ^1.6.0
   astro-feather-icons: ^1.0.2
   astro-icon: ^0.8.0
@@ -33,6 +34,7 @@ dependencies:
 
 devDependencies:
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
+  animated-tailwindcss: 4.0.0_tailwindcss@3.2.1
 
 packages:
 
@@ -838,6 +840,18 @@ packages:
     dependencies:
       '@vue/reactivity': 3.1.5
     dev: false
+
+  /animated-tailwindcss/4.0.0_tailwindcss@3.2.1:
+    resolution: {integrity: sha512-sJquGVOQkdRuEJiDKX/bjjuXgGTpXBiNKiYD3ef+hoNdpWnjDrOVInOHB9QJC/Q7Ir5Ae+KEAg/ZW/ZBS6KcSw==}
+    peerDependencies:
+      postcss: ^8
+      tailwindcss: ^3
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+    dependencies:
+      tailwindcss: 3.2.1
+    dev: true
 
   /ansi-align/3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
