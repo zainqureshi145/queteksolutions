@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon-2.ico">
+    <meta name="generator" content="Astro v1.6.2">
+
+    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    <title>Quetek Solutions</title>
+
+<link rel="canonical" href="https://astroship.web3templates.com/">
+
+
+
+<meta name="robots" content="index, follow">
+
+
+
+
+
+
+
+
+    <!-- <SEO
+      title={makeTitle}
+      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@surjithctly",
+        site: "@web3templates",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `Astroship - Starter Template for Astro`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Astroship Homepage Screenshot",
+        },
+      }}
+    /> -->
+  <link rel="stylesheet" href="/assets/about.92942003.css" />
+<link rel="stylesheet" href="/assets/complete-guide-fullstack-development.5cc0071f.css" /><script type="module" src="/hoisted.71313fab.js"></script>
+<script type="module" src="/page.721c8a4f.js"></script></head>
+  <body>
+    <div class="max-w-screen-xl mx-auto px-5">
+  <header class="flex flex-col lg:flex-row justify-between items-center my-5" x-data="{ open: false }" x-init="$watch('open', value => console.log(value))">
+    <div class="flex w-full lg:w-auto items-center justify-between">
+      <a href="/" class="text-lg">
+        <!-- <span class="font-bold text-slate-800">Astro</span><span
+          class="text-slate-500">ship</span
+        > -->
+        <img alt="logo" class="w-[250px] h-[250px]" width="500" height="500" src="/assets/bigger-logo.012fa249_Z2eC11G.avif" loading="eager" decoding="async">
+      </a>
+      <div class="block lg:hidden">
+        <button @click="open = !open" class="text-gray-800">
+          <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path x-cloak x-show="open" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"></path>
+            <path x-show="!open" fill-rule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ 'block': open, 'hidden': !open }" x-transition>
+      <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <li @click.away="open = false" class="relative" x-data="{ open: false }">
+  <button @click="open = !open" class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+    <span>About</span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5" :class="{'rotate-180': open, 'rotate-0': !open}">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+    </svg>
+  </button>
+  <div x-cloak x-show="open" class="lg:absolute w-full lg:w-48 lg:left-0 origin-top-left">
+    <div class="px-3 lg:py-2 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col">
+      <a href="/mission" class="py-1 text-gray-600 hover:text-gray-900">
+            Vision and Mission
+          </a>
+    </div>
+  </div>
+</li><li @click.away="open = false" class="relative" x-data="{ open: false }">
+  <button @click="open = !open" class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+    <span>Services</span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5" :class="{'rotate-180': open, 'rotate-0': !open}">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+    </svg>
+  </button>
+  <div x-cloak x-show="open" class="lg:absolute w-full lg:w-48 lg:left-0 origin-top-left">
+    <div class="px-3 lg:py-2 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col">
+      <a href="/staffing" class="py-1 text-gray-600 hover:text-gray-900">
+            Technology Staffing
+          </a><a href="/development" class="py-1 text-gray-600 hover:text-gray-900">
+            Product Development
+          </a><a href="/training" class="py-1 text-gray-600 hover:text-gray-900">
+            IT Training
+          </a>
+    </div>
+  </div>
+</li><li>
+                  <a href="/about" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 mb-5">
+                    Technologies
+                  </a>
+                </li><li>
+                  <a href="/contact" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 mb-5">
+                    Contact
+                  </a>
+                </li><li>
+                  <a href="/blog" class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 mb-5">
+                    Blog
+                  </a>
+                </li>
+      </ul>
+      <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
+        <Link href="#" style="muted" block size="md">Log in</Link>
+        <Link href="#" size="md" block>Sign up</Link>
+      </div> -->
+    </nav>
+    <!-- <div>
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#">Log in</a>
+        <Link href="#" size="md">Sign up</Link>
+      </div>
+    </div> -->
+  </header>
+</div>
+    <div class="max-w-screen-xl mx-auto px-5">
+  
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-1 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player src="src/assets/lottie/tech-2.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Quetek Solutions</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Creating groundbreaking technology product solutions for leading companies. Our team are committed to providing smart product
+      solutions for any size of project.
+    </p>
+    <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link href="" target="_blank" class="flex gap-1 items-center justify-center" rel="noopener">
+        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+
+        Button_One</Link
+      >
+      <Link size="lg" style="outline" rel="noopener" href="" class="flex gap-1 items-center justify-center" target="_blank">
+        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        Button_Two</Link
+      >
+    </div> -->
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-0 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player src="src/assets/lottie/company-2.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Who we are</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Queteksolutions is a Global professional IT Services Company providing Consulting and Staff Augmentation Solutions to business
+      organizations.
+    </p>
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-1 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player src="src/assets/lottie/solution-1.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Find the solution</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Queteksolutions is a leading provider of cutting-edge technologies and services, offering scalable solutions for companies of all
+      sizes. We built our solutions by closely listening to our potential clientele and understanding their expectations with our product.
+      We know how to analyze this information and customize our offering to changing market needs.
+    </p>
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-0 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player src="src/assets/lottie/insights-2.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></lottie-player>
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Insights</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Confronting the risks of artificial intelligence. Consider first the positive. These technologies are starting to improve our lives in
+      myriad ways, from simplifying our shopping to enhancing our healthcare experiences.
+    </p>
+  </div>
+</main><div class="mt-16 md:mt-24">
+  <h2 class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight">Changing The Game</h2>
+  <p class="text-center text-lg mt-4 text-slate-600">Some Industries We Serve</p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 24 24" class="text-white" astro-icon="mdi:airplane"><path fill="currentColor" d="M20.56 3.91c.59.59.59 1.54 0 2.12l-3.89 3.89 2.12 9.19-1.41 1.42-3.88-7.43L9.6 17l.36 2.47-1.07 1.06-1.76-3.18-3.19-1.77L5 14.5l2.5.37L11.37 11 3.94 7.09l1.42-1.41 9.19 2.12 3.89-3.89c.56-.58 1.56-.58 2.12 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Accounting</h3> <p class="text-slate-500 mt-2 leading-relaxed">You can depend on us to optimize your institution’s IT performance, and give your organization a competitive edge at your accounting establishment.</p>
+        </div>
+      </div><div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 24 24" class="text-white" astro-icon="mdi:home"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Architecture</h3> <p class="text-slate-500 mt-2 leading-relaxed">We help keep your network healthy because your business depends on its ability to support all critical functions of your operations. </p>
+        </div>
+      </div><div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 24 24" class="text-white" astro-icon="bx:bxs-data"><path fill="currentColor" d="M20 6c0-2.168-3.663-4-8-4S4 3.832 4 6v2c0 2.168 3.663 4 8 4s8-1.832 8-4V6zm-8 13c-4.337 0-8-1.832-8-4v3c0 2.168 3.663 4 8 4s8-1.832 8-4v-3c0 2.168-3.663 4-8 4z"/><path fill="currentColor" d="M20 10c0 2.168-3.663 4-8 4s-8-1.832-8-4v3c0 2.168 3.663 4 8 4s8-1.832 8-4v-3z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Finance</h3> <p class="text-slate-500 mt-2 leading-relaxed">We provide custom software solutions and related services to financial and fintech organizations, including banks, credit unions and more.</p>
+        </div>
+      </div><div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 20 20" class="text-white" astro-icon="fluent:building-retail-20-filled"><path fill="currentColor" d="M6 10V8h8v2H6zm6 4v-1h2v1h-2zm6-9.5a1.5 1.5 0 0 1-1 1.415V16.5a.5.5 0 0 1-.5.5H10v-4.5a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.5V17H3.5a.5.5 0 0 1-.5-.5V5.915A1.5 1.5 0 0 1 3.5 3h13A1.5 1.5 0 0 1 18 4.5zm-15 0a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 0-1h-13a.5.5 0 0 0-.5.5zM5.5 7a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-9zm6 5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-3zM6 17h3v-4H6v4z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Retail</h3> <p class="text-slate-500 mt-2 leading-relaxed">Our team develops retail software to empower brick-and-mortars, mid sized companies and more to compete with other ecommerce platforms.</p>
+        </div>
+      </div><div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 24 24" class="text-white" astro-icon="mdi:transportation"><path fill="currentColor" d="M12 4H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3l-1 1v1h1l2-2.03L9 18v-5H4V6h9v2h2V7a3 3 0 0 0-3-3M5 14a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m15.57-4.34c-.14-.4-.52-.66-.97-.66h-7.19c-.46 0-.83.26-.98.66L10 13.77v5.51c0 .38.32.72.7.72h.62c.38 0 .68-.38.68-.76V18h8v1.24c0 .38.31.76.69.76h.61c.38 0 .7-.34.7-.72v-5.51l-1.43-4.11m-8.16.34h7.19l1.03 3h-9.25l1.03-3M12 16a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m8 0a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Transportation</h3> <p class="text-slate-500 mt-2 leading-relaxed">Air &amp; rail transportation organizations depend heavily on their client interfaces &amp; of course, their timely services to spur growth. </p>
+        </div>
+      </div><div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <svg viewBox="0 0 24 24" class="text-white" astro-icon="simple-icons:bookstack"><path fill="currentColor" d="M.301 17.615c-.13-.34-.522-1.512-.133-2.432l9.827 5.674a.329.329 0 0 0 .33 0L24 12.962v2.354l-13.84 7.99L.3 17.615zm-.11-8.652c-.288.877.015 2.058.124 2.426l9.845 5.684L24 9.083V6.726l-13.675 7.896a.329.329 0 0 1-.33 0L.19 8.963zm13.17-1.936a.332.332 0 0 1-.485-.207l-.28-1.133-2.126-.176a.33.33 0 0 1-.138-.614l5.578-3.22-1.702-.983-13.51 7.8 9.462 5.462 13.51-7.8-4.4-2.54-5.91 3.41zm-.182-1.729.232.938 5.198-3.001-2.04-1.178-4.993 2.884 1.31.108a.33.33 0 0 1 .293.25zM24 9.845 10.325 17.74a.329.329 0 0 1-.33 0L.168 12.067c-.39.919.003 2.091.133 2.43l9.859 5.693L24 12.2V9.844z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Education</h3> <p class="text-slate-500 mt-2 leading-relaxed">We handle high-level IT systems in the most  business environments, we can help you figure out cost-effective ways to accomplish your goals.</p>
+        </div>
+      </div>
+</div><div class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+  <h2 class="text-white text-4xl md:text-6xl">We're here to help.</h2>
+  <p class="text-slate-400 mt-4 text-lg md:text-xl">What can we help you achieve?</p>
+  <div class="flex mt-5">
+    <a href="/contact" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white text-black border-2 border-transparent">Contact Us
+</a>
+  </div>
+</div>
+</div>
+    <footer class="my-20">
+  <p class="text-center text-sm text-slate-500">
+    Copyright © 2023 Quetek Solutions.
+  </p>
+
+  <p class="text-center text-xs text-slate-500 mt-1"></p>
+</footer>
+    
+  </body>
+</html>
