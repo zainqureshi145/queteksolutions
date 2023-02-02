@@ -5,44 +5,104 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Image
-      src={heroImage}
-      alt="Astronaut in the air"
-      loading="eager"
-      format="avif"
+  <div class="py-6 lg:order-1 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player
+      src="src/assets/lottie/tech-2.json"
+      background="transparent"
+      speed="1"
+      style="width: 500px; height: 500px;"
+      loop
+      autoplay
     />
   </div>
   <div>
-    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-      Quetek Solutions
-    </h1>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Quetek Solutions</h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Creating groundbreaking technology product solutions for leading
-      companies. Our team are committed to providing smart product solutions for
-      any size of project.
+      Creating groundbreaking technology product solutions for leading companies. Our team are committed to providing smart product
+      solutions for any size of project.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href=""
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
+    <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link href="" target="_blank" class="flex gap-1 items-center justify-center" rel="noopener">
         <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
 
         Button_One</Link
       >
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href=""
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
+      <Link size="lg" style="outline" rel="noopener" href="" class="flex gap-1 items-center justify-center" target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
         Button_Two</Link
       >
-    </div>
+    </div> -->
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-0 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player
+      src="src/assets/lottie/company-2.json"
+      background="transparent"
+      speed="1"
+      style="width: 500px; height: 500px;"
+      loop
+      autoplay
+    />
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Who we are</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Queteksolutions is a Global professional IT Services Company providing Consulting and Staff Augmentation Solutions to business
+      organizations.
+    </p>
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-1 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player
+      src="src/assets/lottie/solution-1.json"
+      background="transparent"
+      speed="1"
+      style="width: 500px; height: 500px;"
+      loop
+      autoplay
+    />
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Find the solution</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Queteksolutions is a leading provider of cutting-edge technologies and services, offering scalable solutions for companies of all
+      sizes. We built our solutions by closely listening to our potential clientele and understanding their expectations with our product.
+      We know how to analyze this information and customize our offering to changing market needs.
+    </p>
+  </div>
+</main>
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 lg:order-0 hidden lg:block">
+    <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
+    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+    <lottie-player
+      src="src/assets/lottie/insights-2.json"
+      background="transparent"
+      speed="1"
+      style="width: 400px; height: 400px;"
+      loop
+      autoplay
+    />
+  </div>
+  <div>
+    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Insights</h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Confronting the risks of artificial intelligence. Consider first the positive. These technologies are starting to improve our lives in
+      myriad ways, from simplifying our shopping to enhancing our healthcare experiences.
+    </p>
   </div>
 </main>

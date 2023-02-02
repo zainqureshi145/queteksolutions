@@ -4,54 +4,47 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Heading 1",
+    title: "Accounting",
     description:
-      "Ipsum qui Lorem labore anim ea veniam irure reprehenderit aliquip. Qui tempor eiusmod exercitation sit qui velit nisi elit et. Aute aliqua eiusmod sit pariatur consequat ipsum nulla deserunt voluptate labore fugiat. Culpa ullamco eu consequat magna non est incididunt laboris esse ipsum id.",
-    icon: "bx:bxs-briefcase",
+      "You can depend on us to optimize your institution’s IT performance, and give your organization a competitive edge at your accounting establishment.",
+    icon: "mdi:airplane",
   },
   {
-    title: "Heading 2",
+    title: "Architecture",
     description:
-      "Tempor veniam pariatur in commodo veniam duis. Culpa reprehenderit culpa proident dolore culpa excepteur. Id officia et incididunt qui laboris.",
-    icon: "bx:bxs-window-alt",
+      "We help keep your network healthy because your business depends on its ability to support all critical functions of your operations. ",
+    icon: "mdi:home",
   },
   {
-    title: "Heading 3",
+    title: "Finance",
     description:
-      "Consectetur culpa pariatur cillum occaecat ex dolore et ex excepteur sit laboris sit. Consectetur excepteur nulla nostrud eu. Ullamco cillum deserunt ullamco ad fugiat eiusmod occaecat ex ut. Labore quis nisi excepteur dolor. Esse est id officia minim est amet. Cillum ipsum eu magna laborum dolore in sint reprehenderit.",
+      "We provide custom software solutions and related services to financial and fintech organizations, including banks, credit unions and more.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Heading 4",
+    title: "Retail",
     description:
-      "Tempor quis aute sit dolor aliquip quis adipisicing adipisicing ipsum reprehenderit tempor consectetur. Officia anim occaecat aliquip labore id duis velit. Labore excepteur cupidatat tempor Lorem nostrud id reprehenderit est dolor consectetur do.",
-    icon: "bx:bxs-bot",
+      "Our team develops retail software to empower brick-and-mortars, mid sized companies and more to compete with other ecommerce platforms.",
+    icon: "fluent:building-retail-20-filled",
   },
   {
-    title: "Heading 5",
+    title: "Transportation",
     description:
-      "Fugiat incididunt ullamco sunt exercitation aliquip consectetur sit non Lorem est ad reprehenderit mollit ullamco. Deserunt mollit est dolor excepteur minim consequat non tempor deserunt. Consequat minim occaecat do incididunt adipisicing labor.",
-    icon: "bx:bxs-file-find",
+      "Air & rail transportation organizations depend heavily on their client interfaces & of course, their timely services to spur growth. ",
+    icon: "mdi:transportation",
   },
   {
-    title: "Heading 6",
+    title: "Education",
     description:
-      "Esse aute do tempor anim dolore excepteur nulla incididunt. Sit tempor cupidatat tempor veniam veniam enim nostrud amet nulla. Ullamco ut sunt aute laboris labore enim incididunt.",
-    icon: "bx:bxs-user",
+      "We handle high-level IT systems in the most  business environments, we can help you figure out cost-effective ways to accomplish your goals.",
+    icon: "simple-icons:bookstack",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Ipsum excepteur in adipisicing in.
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Do irure tempor est non ipsum in. Ea ad sunt anim ullamco. Elit et occaecat
-    dolor deserunt enim qui mollit nostrud. Et ea nulla anim dolore cupidatat ea
-    veniam sint esse Lorem quis exercitation reprehenderit. Consequat irure id
-    commodo laboris ea proident sint minim officia et sunt duis irure et.
-  </p>
+<div class="mt-16 md:mt-24">
+  <h2 class="text-center text-4xl lg:text-5xl font-bold lg:tracking-tight">Changing The Game</h2>
+  <p class="text-center text-lg mt-4 text-slate-600">Some Industries We Serve</p>
 </div>
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
@@ -62,8 +55,7 @@ const features = [
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          <h3 class="font-semibold text-lg">{item.title}</h3> <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
     ))
