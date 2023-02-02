@@ -6,30 +6,26 @@ import { Image } from "@astrojs/image/components";
 import logoImage from "assets/bigger-logo.png";
 
 const menuitems = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "#" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //   ],
-  // },
   {
-    title: "Pricing",
+    title: "About",
+    path: "#",
+    children: [{ title: "Vision and Mission", path: "#" }],
+  },
+  {
+    title: "Services",
     path: "/pricing",
   },
   {
-    title: "About",
+    title: "Technologies",
     path: "/about",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
   },
   {
     title: "Contact",
     path: "/contact",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
   },
 ];
 ---
