@@ -9,6 +9,9 @@ import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="">
+  <video playsinline autoplay muted loop class="hidden lg:flex justify-center absolute -z-10 w-full top-36 opacity-50">
+    <source src="src/assets/vids/intro-md-crop.mp4" type="video/mp4" />
+  </video>
   <Container>
     <Hero />
     <Features />
