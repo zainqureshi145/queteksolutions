@@ -1,0 +1,63 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Link from "@components/ui/link.astro";
+---
+
+<Layout title="">
+  <Container>
+    <img src="src/assets/product.jpg" class="hidden lg:flex justify-center absolute -z-10 w-full h-3/4 left-0 opacity-50" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <main class="grid lg:grid-cols-1 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="lg:my-56">
+        <h1 class="text-5xl text-center lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Product Development</h1>
+      </div>
+    </main>
+
+    <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="py-6 lg:order-1 hidden lg:block">
+        <lottie-player
+          src="src/assets/lottie/why.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 350px;"
+          loop
+          autoplay
+        />
+      </div>
+      <div>
+        <h1 class="text-5xl lg:mt-12 lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Why Choose Queteksolutions?</h1>
+        <p class="text-lg mt-4 text-slate-600 max-w-xl">
+          As a known industry leader, we're used to working with all types of customers - local or global, large or small. Exceptional
+          quality is the foundation of our company, and it is the driving force behind all decisions. We work in a highly competitive field,
+          so we're constantly investing in technology and research to make sure we stay ahead of the curve. Our commitment to quality
+          guarantees our success and your satisfaction.
+        </p>
+      </div>
+    </main>
+
+    <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="py-6 lg:order-0 hidden lg:block">
+        <lottie-player
+          src="src/assets/lottie/software-dev.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 350px;"
+          loop
+          autoplay
+        />
+      </div>
+      <div>
+        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Ready to build your software?</h1>
+        <p class="text-lg mt-4 text-slate-600 max-w-xl">
+          At Queteksolutions we offer world-class software product development services from requirements and systems analysis, architecture
+          and design to development, testing, migration, and deployment.
+        </p>
+        <div class="mt-12 flex flex-col sm:flex-row gap-3">
+          <Link href="/contact" class="flex gap-1 items-center justify-center" rel="noopener">Contact Us</Link>
+        </div>
+      </div>
+    </main>
+  </Container>
+</Layout>

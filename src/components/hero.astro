@@ -1,8 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
 ---
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -17,7 +14,7 @@ import { Icon } from "astro-icon";
       autoplay
     />
   </div> -->
-  <div class="lg:my-60">
+  <div class="lg:my-48">
     <h1 class="text-5xl text-center lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Quetek Solutions</h1>
     <p class="text-3xl mt-12 text-center text-slate-900 max-w-3xl">
       Creating groundbreaking technology product solutions for leading companies. Our team are committed to providing smart product
@@ -25,10 +22,6 @@ import { Icon } from "astro-icon";
     </p>
     <div class="mt-12 flex flex-col items-center justify-center sm:flex-row gap-3">
       <Link href="/contact" class="flex gap-1 items-center justify-center" rel="noopener">Contact Us</Link>
-      <!-- <Link size="lg" style="outline" rel="noopener" href="" class="flex gap-1 items-center justify-center" target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        Button_Two</Link
-      > -->
     </div>
   </div>
 </main>
