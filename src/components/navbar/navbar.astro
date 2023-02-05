@@ -3,7 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Image } from "@astrojs/image/components";
-import logoImage from "assets/bigger-logo.png";
+import logoImage from "assets/logo-transparent.png";
 
 const menuitems = [
   {
@@ -22,7 +22,7 @@ const menuitems = [
   },
   {
     title: "Technologies",
-    path: "/about",
+    path: "/technologies",
   },
   {
     title: "Contact",
@@ -46,10 +46,10 @@ const menuitems = [
         <!-- <span class="font-bold text-slate-800">Astro</span><span
           class="text-slate-500">ship</span
         > -->
-        <Image src={logoImage} alt="logo" loading="eager" format="avif" class:list={"w-auto h-[150px]"} />
+        <Image src={logoImage} alt="logo" loading="eager" format="avif" class:list={"w-auto h-[200px]"} />
       </a>
       <div class="block lg:hidden">
-        <button @click="open = !open" class="text-gray-800">
+        <button @click="open = !open" class="text-black hover:text-gray-700">
           <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path
@@ -76,7 +76,7 @@ const menuitems = [
 
               {!item.children && (
                 <li>
-                  <a href={item.path} class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 mb-5">
+                  <a href={item.path} class="flex lg:px-3 py-2 text-black hover:text-gray-700 mb-5">
                     {item.title}
                   </a>
                 </li>

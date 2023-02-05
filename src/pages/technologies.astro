@@ -1,78 +1,127 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
-import { Image } from "@astrojs/image/components";
-
-const TeamImg1 = "https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280";
-const TeamImg2 = "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280";
-const TeamImg3 = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?&fit=crop&w=280";
-
-const team = [
-  {
-    name: "Jane Doe",
-    title: "Senior Director",
-    avatar: {
-      src: TeamImg1,
-      width: 480,
-      height: 560,
-    },
-  },
-  {
-    name: "Max Plank",
-    title: "Principal Strategist",
-    avatar: {
-      src: TeamImg2,
-      width: 580,
-      height: 580,
-    },
-  },
-  {
-    name: "Roberto Carlos",
-    title: "Marketing Engineer",
-    avatar: {
-      src: TeamImg3,
-      width: 580,
-      height: 580,
-    },
-  },
-];
 ---
 
 <Layout title="About">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
-    </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">Empowering the world.</h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse backgrounds, bringing different personalities, experiences
-        and skills to the job. This is what makes our team so special.
-      </p>
+    <div class="bg-slate-900 p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
+      <h2 class="text-white text-4xl md:text-6xl">Technologies</h2>
+      <p class="text-slate-400 mt-4 text-lg md:text-xl">Some Cutting Edge Technologies that We Support</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        team.map((item) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Image
-                {...item.avatar}
-                format="avif"
-                alt="Team"
-                class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
-              />
-            </div>
 
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800"> {item.name}</h2>
-              <h3 class="text-sm text-slate-500"> {item.title}</h3>
-            </div>
-          </div>
-        ))
-      }
+    <!-- Java -->
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/java.png" alt="java" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Java</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            Scale your development capacity with Java developers. Our model lets you grow your local technology unit within our custom team
+            composition process that adheres to your engineering practices.
+          </p>
+        </div>
+      </div>
+
+      <!-- Python -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/python.png" alt="python" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Python</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We provide leading companies with top engineers who specializes in hands-on experience of analyzing data, algorithm and
+            automations.
+          </p>
+        </div>
+      </div>
+
+      <!-- C++ -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/cpp.png" alt="C++" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">C++</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            Our team is packed with .NET developers who has years of experience in Windows and Microsoft full technology stack for software
+            development.
+          </p>
+        </div>
+      </div>
+
+      <!-- .Net -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/net.png" alt=".Net" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Microsoft .Net</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We build teams of .NET developers with experience in Windows and Microsoft Technology for full software development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Android -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/android.png" alt="android" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Android</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            Our team is proficient in the Google Play programming environment and have expertise in developing Android application.
+          </p>
+        </div>
+      </div>
+
+      <!-- Apple -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/apple.png" alt="Apple" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Apple</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We use different frameworks used by Apple Inc. Our team will design and develop your idea right into development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blockchain -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/blockchain.png" alt="Blockchain" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Blockchain</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We have a network of top blockchain developers, engineers, and consultants and blockchain engineers to launch ICOs, write smart
+            contracts, and more.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/cyber.png" alt="Cybersecurity" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Cyber Security</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We have a team that will make your existing security solutions better with greater visibility and detection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Php -->
+
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg w-[24rem]" src="src/assets/technologies/php.png" alt="PHP" />
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">PHP</h5>
+          <p class="mb-3 font-normal text-center text-gray-700 dark:text-gray-400">
+            We assemble teams of developers in an effort to develop solutions for CMS and project management tools.
+          </p>
+        </div>
+      </div>
     </div>
   </Container>
 </Layout>

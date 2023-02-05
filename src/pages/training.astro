@@ -3,12 +3,21 @@ import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <Layout title="">
   <Container>
-    <img src="src/assets/staffing.png" class="hidden lg:flex justify-center absolute -z-10 w-full h-3/4 left-0 opacity-50" />
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <main class="grid lg:grid-cols-1 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="py-6 lg:order-1 hidden lg:block absolute -z-10 opacity-50">
+        <lottie-player
+          src="src/assets/lottie/training-1.json"
+          background="transparent"
+          speed="1"
+          style="width: 900px; height: 800px;"
+          loop
+          autoplay
+        />
+      </div>
       <div class="lg:my-56">
         <h1 class="text-5xl text-center lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">IT Training</h1>
       </div>
@@ -16,21 +25,15 @@ import Layout from "@layouts/Layout.astro";
 
     <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
       <div class="py-6 lg:order-1 hidden lg:block">
-        <lottie-player
-          src="src/assets/lottie/staffing.json"
-          background="transparent"
-          speed="1"
-          style="width: 500px; height: 350px;"
-          loop
-          autoplay
-        />
+        <img src="src/assets/classroom.jpg" alt="classroom" class="h-96 w-auto" />
       </div>
       <div>
-        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">IT staffing & Recruiting</h1>
+        <h2>GET HANDS-ON TRAINING</h2>
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Class Room Training</h1>
         <p class="text-lg mt-4 text-slate-600 max-w-xl">
-          Queteksolutions doesn't just help you look for a job. We make sure you find one. By understanding your experience and career
-          goals, we develop a job search plan customized to your needs. We make sure to create the perfect match between you and your future
-          employer by combining your requirements as well as theirs. Finding a job has never been this easy.
+          Get trained in multiple technology topics in person at Queteksolutions classroom training. Our IT labs are equipped with latest
+          cloud infrastructure which simulate the real time scenarios. Learn from Top Class Trainers who are certified and follow industry
+          standards.
         </p>
       </div>
     </main>
@@ -39,109 +42,32 @@ import Layout from "@layouts/Layout.astro";
       <div class="py-6 lg:order-0 hidden lg:block">
         <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
         <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
-        <lottie-player
-          src="src/assets/lottie/trust.json"
-          background="transparent"
-          speed="1"
-          style="width: 500px; height: 350px;"
-          loop
-          autoplay
-        />
+        <img src="src/assets/online.jpg" alt="classroom" class="h-96 w-auto" />
       </div>
       <div>
-        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">You Can Count On Us</h1>
+        <h2>VIRTUAL OPPORTUNITY</h2>
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Online Training</h1>
         <p class="text-lg mt-4 text-slate-600 max-w-xl">
-          We have a talented team of recruiters who specialize in tech recruiting. We have experience filling many roles in the Information
-          Technology space and are always looking for talented professionals that fit what our clients are looking for.
+          You can opt in to get trained online/remotely and still experience Queteksolutions Get access to our comprehensive training on
+          various technologies. You will not miss a heartbeat, since it is led by a Live Instructor, and you can complete the course at your
+          own pace. Live projects, a variety of assignments and 1x1 feedback will help you to elevate your IT skills to the next level.
         </p>
       </div>
     </main>
 
     <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
       <div class="py-6 lg:order-1 hidden lg:block">
-        <lottie-player
-          src="src/assets/lottie/hiring.json"
-          background="transparent"
-          speed="1"
-          style="width: 500px; height: 350px;"
-          loop
-          autoplay
-        />
+        <img src="src/assets/corporate.jpg" alt="classroom" class="h-96 w-auto" />
       </div>
       <div>
-        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Our Process</h1>
-        <p class="text-lg mt-4 text-slate-600 max-w-xl"></p><ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span>Opening the Requisition</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span>Screening the Applicants</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span>Interviewing the Candidates<span class="font-semibold text-gray-900 dark:text-white"></span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span>Selecting the Best<span class="font-semibold text-gray-900 dark:text-white"></span></span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <!-- Icon -->
-            <svg
-              class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span>Making the Offer<span class="font-semibold text-gray-900 dark:text-white"></span></span>
-          </li>
-        </ul>
+        <h2>GET HANDS-ON</h2>
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight">Corporate Training</h1>
+        <p class="text-lg mt-4 text-slate-600 max-w-xl">
+          We are experts at what we do. Let us help you drive your business growth and IT Knowledge capital to the next level. We offer
+          instructor led, or virtual training for your company. We serve companies with less than 5, or more than 500 employees. If you are
+          looking to certify a team on key IT skill sets, or augment your technical capabilities with new cutting edge technologies, look no
+          further. Experience Queteksolutions, our customized training plan for corporations and executives.
+        </p>
       </div>
     </main>
   </Container>
