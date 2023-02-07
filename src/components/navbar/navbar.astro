@@ -1,16 +1,10 @@
 ---
 import Container from "@components/container.astro";
-import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Image } from "@astrojs/image/components";
-import logoImage from "assets/logo-transparent.png";
+import logoImage from "assets/logo.png";
 
 const menuitems = [
-  {
-    title: "About",
-    path: "#",
-    children: [{ title: "Vision and Mission", path: "/mission" }],
-  },
   {
     title: "Services",
     path: "#",
@@ -23,6 +17,10 @@ const menuitems = [
   {
     title: "Technologies",
     path: "/technologies",
+  },
+  {
+    title: "Our Mission",
+    path: "/mission"
   },
   {
     title: "Contact",
@@ -43,10 +41,7 @@ const menuitems = [
   >
     <div class="flex w-full lg:w-auto items-center justify-between">
       <a href="/" class="text-lg">
-        <!-- <span class="font-bold text-slate-800">Astro</span><span
-          class="text-slate-500">ship</span
-        > -->
-        <Image src={logoImage} alt="logo" loading="eager" format="avif" class:list={"w-auto h-[200px]"} />
+        <Image src={logoImage} alt="logo" loading="eager" format="avif" class:list={"brightness-125 mt-10 w-auto h-[125px]"} />
       </a>
       <div class="block lg:hidden">
         <button @click="open = !open" class="text-black hover:text-gray-700">
@@ -85,16 +80,6 @@ const menuitems = [
           ))
         }
       </ul>
-      <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
-        <Link href="#" style="muted" block size="md">Log in</Link>
-        <Link href="#" size="md" block>Sign up</Link>
-      </div> -->
     </nav>
-    <!-- <div>
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
-      </div>
-    </div> -->
   </header>
 </Container>
