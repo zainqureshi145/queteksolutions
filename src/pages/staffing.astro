@@ -2,12 +2,16 @@
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
 ---
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <Layout title="">
   <Container>
-    <img src="src/assets/staffing.jpg" class="hidden lg:flex justify-center absolute -z-10 w-full h-3/4 left-0 opacity-50" />
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <main class="grid lg:grid-cols-1 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="py-6 lg:order-1 hidden lg:block absolute -z-10 top-0 opacity-50">
+        <img src="src/assets/staffing.jpg"/>
+      </div>
+    </main>
+    
     <main class="grid lg:grid-cols-1 place-items-center pt-16 pb-8 md:pt-8">
       <div class="lg:my-56">
         <h1 class="text-5xl text-center lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">Technology Staffing</h1>
@@ -37,8 +41,6 @@ import Layout from "@layouts/Layout.astro";
 
     <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
       <div class="py-6 lg:order-0 hidden lg:block">
-        <!-- <Image src={heroImage} alt="Astronaut in the air" loading="eager" format="avif" /> -->
-        <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
         <lottie-player
           src="src/assets/lottie/trust.json"
           background="transparent"

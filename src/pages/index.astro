@@ -6,16 +6,26 @@ import Footer from "@components/footer.astro";
 import Hero from "@components/hero.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
+import Video from "@components/video.astro";
 ---
 
+<!-- <Video /> -->
 <Layout title="">
-  <video playsinline autoplay muted loop class="hidden lg:flex justify-center absolute -z-10 w-full top-0 left-0 opacity-50">
-    <source src="src/assets/vids/intro-md-crop.mp4" type="video/mp4" />
-  </video>
   <Container>
+    <main class="grid lg:grid-cols-1 place-items-center pt-16 pb-8 md:pt-8">
+      <div class="py-6 lg:order-1 hidden lg:block absolute -z-10 top-0 opacity-50">
+        <video
+          playsinline
+          autoplay
+          muted
+          loop
+        >
+          <source src="src/assets/vids/intro-md-crop.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </main>
     <Hero />
     <Features />
-    <!-- <Logos /> -->
     <Cta />
   </Container>
 </Layout>
