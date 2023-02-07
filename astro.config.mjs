@@ -17,5 +17,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://www.queteksolutions.com',
   integrations: [tailwind(), alpinejs(), image(), mdx(), sitemap()]
 });
