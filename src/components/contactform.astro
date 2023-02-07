@@ -2,10 +2,9 @@
 import Button from "./ui/button.astro";
 ---
 
-<form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
-  <input type="hidden" name="access_key" value="9c12dca0-379d-423a-8b7d-92009e5021b0" />
-
+<form action="https://formsubmit.co/info@queteksolutions.com" method="POST" id="contactform" class="needs-validation" novalidate>
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+  <input type="hidden" name="_next" value="https://www.queteksolutions.com/contact/">
   <div class="mb-5">
     <input
       type="text"
@@ -41,6 +40,7 @@ import Button from "./ui/button.astro";
   <div id="result" class="mt-3 text-center"></div>
 </form>
 
+
 <style>
   .invalid-feedback,
   .empty-feedback {
@@ -72,41 +72,9 @@ import Button from "./ui/button.astro";
       form.querySelectorAll(":invalid")[0].focus();
       return;
     }
-    const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
     result.innerHTML = "Sending...";
-
-    fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
+    fetch("https://formsubmit.co/info@queteksolutions.com", {
+      method: "POST"
     })
-      .then(async (response) => {
-        let json = await response.json();
-        if (response.status == 200) {
-          result.classList.add("text-green-500");
-          result.innerHTML = json.message;
-        } else {
-          console.log(response);
-          result.classList.add("text-red-500");
-          result.innerHTML = json.message;
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        result.innerHTML = "Something went wrong!";
-      })
-      .then(function () {
-        form.reset();
-        form.classList.remove("was-validated");
-        setTimeout(() => {
-          result.style.display = "none";
-        }, 5000);
-      });
   });
 </script>
